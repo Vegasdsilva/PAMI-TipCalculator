@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Valor da Gorjeta"
+             />
+
+            <Entry
+                x:Name="ValueEntry"
+                Placeholder="Digite Aqui"
+                />
+
+            <Label
+                Text="Tip"
+             />
+
+            <Label
+                Text="0.00"
+                x:Name="LabelTipValue"
+             />
+
+            <Label
+                Text="Total"
+                
+             />
+
+            <Label
+                Text="0.00"
+                x:Name="LabelTotalValue"
+             />
+
+            <Label
+                Text="Tip Porcentagem"
+             />
+
+            <Label
+                Text="0%"
+                x:Name="LabelPercentageValue"
+             />
+
+            <Slider
+                x:Name="SliderTipPercent"
+                Minimum="0"
+                Maximum="100"
+                BackgroundColor="Yellow"
+                ValueChanged="SliderTipPercent_ValueChanged"
+                />
+
+            <Button
+                x:Name="Button15Percent"
+                Text="15%"
+                Clicked="Button15Percent_Clicked"
+                />
+
+            <Button
+                x:Name="Button20Percent"
+                Text="20%" 
+                Clicked="Button20Percent_Clicked"
+                />
+
+            <Button
+                x:Name="ButtonRoundDown"
+                Text="Round Down" 
+                Clicked="ButtonRoundDown_Clicked"
+             
+            />
+
+            <Button
+                x:Name="ButtonRoundUp"
+                Text="Round Up" 
+                Clicked="ButtonRoundUp_Clicked"
+            />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
